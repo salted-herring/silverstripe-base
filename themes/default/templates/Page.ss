@@ -15,7 +15,7 @@
 		
 		<% include GA %>
 	</head>
-	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %>">
+	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %> page-type-$BodyClass.LowerCase" style="background-color: #fff;">
 		<% include Header %>
 		
 		<main class="container">
@@ -23,6 +23,25 @@
 		</main>
 		
 		<% include Footer %>
-		$getRequireJS
 	</body>
 </html>
+
+
+<div class="all-blocks">
+				<h1 style="color: orange">All blocks this page has</h1>
+				<% loop $AllBlocks %>
+					$Me
+				<% end_loop %>
+			</div>
+			<div class="my-blocks">
+				<h1 style="color: orange">Blocks pulled via ManyMany</h1>
+				<% loop $MyBlocks %>
+					$Me
+				<% end_loop %>
+			</div>
+			<div class="my-blocks">
+				<h1 style="color: orange">Blocks assigned based on Class</h1>
+				<% loop $DockedBlocks %>
+					$Me
+				<% end_loop %>
+			</div>

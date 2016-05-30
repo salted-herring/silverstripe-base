@@ -9,7 +9,7 @@
 		"silverstripe/framework": "~3.3.1",
 		"silverstripe/googlesitemaps": "~1.2.2",
 		"silverstripe/html5": "~1.0.2",
-		"silverstripe-australia/gridfieldextensions": "~1.1.0",
+		"silverstripe-australia/gridfieldextensions": "~1.3.0",
 		"silverstripe/staticpublisher": "~1.0.0",
 		"silverstripe/lumberjack": "~1.1",
 		"silverstripe/tagfield": "^1.2",
@@ -19,7 +19,9 @@
 		"heyday/silverstripe-optimisedimage": "~2.2.1",
 		"sheadawson/quickaddnew": "dev-master",
 		"heyday/silverstripe-dataobjectpreview": "~1.0.2",
-		"normann/gridfieldpaginatorwithshowall": "dev-master"
+		"normann/gridfieldpaginatorwithshowall": "dev-master",
+		"undefinedoffset/sortablegridfield": "^0.6.1",
+		"salted-herring/image-orientation-fixer": "^1.0"
 	},
 	"require-dev": {
     	"phpunit/phpunit": "3.7.*"

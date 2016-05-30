@@ -97,5 +97,8 @@ if($includeTitle === true || $includeTitle == 'true') {
 	public function getTheTitle() {
 		return Convert::raw2xml(($this->MetaTitle) ? $this->MetaTitle : $this->Title);
 	}
-
+	
+	public function getBodyClass() {
+		return Utilities::sanitiseClassName($this->singular_name(),'-');
+	}
 }
