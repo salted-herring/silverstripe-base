@@ -1,7 +1,6 @@
 # Require any additional compass plugins here.
 require "susy"
 require 'compass-h5bp'
-require 'bootstrap-sass'
 require 'breakpoint'
 
 # Set this to the root of your project when deployed:
