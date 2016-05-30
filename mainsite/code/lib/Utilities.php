@@ -194,9 +194,7 @@ class UtilityFunctions {
 	 * Get $count words from a piece of text.
 	 * */
 	public static function getWords($sentence, $count = 10) {
-		/*preg_match("/(?:\w+(?:\W+|$)){0,$count}/", $sentence, $matches);
-		return $matches[0];*/
-		$sentence = trim(strip_tags($sentence));
+		$sentence = str_replace("\r", '', str_replace("\n", '', trim(strip_tags($sentence))));
 		$words = explode(' ', $sentence);
 		
 		if (count($words) <= $count) {
