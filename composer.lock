@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "11493705f2ee9f777a8f95c9b58500b4",
-    "content-hash": "d4618237dc908c3c7dcd4e3ee86aa269",
+    "hash": "2e5987c1d742b4a36fa4f61bfb140cd8",
+    "content-hash": "ea96dd1042938274b57cf7903e07e4e6",
     "packages": [
         {
             "name": "composer/installers",
@@ -384,6 +384,39 @@
                 "silverstripe"
             ],
             "time": "2016-04-17 03:31:23"
+        },
+        {
+            "name": "salted-herring/salted-library",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/salted-herring/salted-library.git",
+                "reference": "abfe3f0f6fca0e98f1b6e9b55f10941333ac1ee4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/salted-herring/salted-library/zipball/abfe3f0f6fca0e98f1b6e9b55f10941333ac1ee4",
+                "reference": "abfe3f0f6fca0e98f1b6e9b55f10941333ac1ee4",
+                "shasum": ""
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Salted Herring",
+                    "homepage": "http://saltedherring.com"
+                }
+            ],
+            "description": "Salted Herring's PHP Library (in progress)",
+            "homepage": "https://github.com/salted-herring/salted-library",
+            "keywords": [
+                "library",
+                "php"
+            ],
+            "time": "2016-05-30 05:14:09"
         },
         {
             "name": "sheadawson/quickaddnew",
