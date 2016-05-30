@@ -1,3 +1,6 @@
 [submodule "silverstripe-cropperfield"]
 	path = silverstripe-cropperfield
 	url = https://github.com/salted-herring/silverstripe-cropperfield.git
+[submodule "salted-library"]
+	path = salted-library
+	url = git@github.com:salted-herring/salted-library.git
