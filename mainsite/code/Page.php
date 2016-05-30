@@ -1,4 +1,5 @@
 <?php
+use SaltedHerring\Utilities as Utilities;
 class Page extends SiteTree {
 
 	private static $db = array(
