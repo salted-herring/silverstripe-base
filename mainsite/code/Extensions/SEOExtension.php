@@ -72,7 +72,7 @@ class SEOExtension extends DataExtension {
 			 * */
 			if (empty($this->owner->$key) && !empty($description)) {
 				$matches = array();
-				$this->owner->$key = UtilityFunctions::getWordsWithinCharLimit(strip_tags($description));
+				$this->owner->$key = SaltedHerring\Utilities::getWordsWithinCharLimit(strip_tags($description));
 			}
 		}
 		
