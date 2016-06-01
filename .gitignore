@@ -22,6 +22,7 @@ cms
 ## Silverstripe Modules ##
 modules
 blog
+blogadmin
 blogcategories
 googlesitemaps
 html5

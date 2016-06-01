@@ -18,3 +18,13 @@ $grid-padding: 10px;
  * */
 $container: max-width 959px;
 $max-width-single-column: 640;
+$container_ipadTo960: 768px 959px;
+$container_largerPhones: 640px 767px;
+$container_small: 0 639px;
+
+
+/**
+ * Grid Sizes
+ * */
+$_960Grid: (columns: 3, gutters: 1/15, column-width: 300px, math: fluid);
+$_768Grid: (columns: 2, gutters: 1/15, column-width: 300px, math: fluid);

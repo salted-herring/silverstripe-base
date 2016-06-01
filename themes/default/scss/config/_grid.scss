@@ -35,23 +35,15 @@ $susy: (
         	right: gutter()
     	}
 	}
+}
 
-	.grid_4 {
-		&:nth-child(3n) {
-			margin-right: 0;
-		}
-	}
+.grid {
+    word-break: break-word;
 }
 
 @for $i from 1 through $total-columns {
 	.grid_#{$i} {
 		@include span($i of $total-columns);
-
-		@if $i == 1 {
-			width: $column-width;
-			max-width: $column-width;
-			_width: $column-width;
-		}
 
 		@if $i != $total-columns {
 			&:last-child {
@@ -71,6 +63,9 @@ $susy: (
 	}
 }
 
+/**
+ * Any grid elements marked as first or last should remove the appropriate margins.
+ * */
 [class*="grid_"] {
 	&.first {
 		@include first;
@@ -81,9 +76,11 @@ $susy: (
 	}
 }
 
-
+/**
+ * FIrst item - no padding.
+ * */
 .alpha {
-	@include bleed-x(20px 0 no-gutters);
+	@include bleed-x($gutter-width 0 no-gutters);
 	padding-right: 0;
 }
 
@@ -103,74 +100,75 @@ $susy: (
  * =========================== */
 
 
-// Generic max 960px wide
-@include susy-breakpoint($container, $total-columns) {
-    .alpha {
-    	margin-left: 0;
-    	padding-left: 0;
-    }
+/**
+ * Anything less than 960 -> down to portrait iPad.
+ * */
+@include susy-breakpoint($container_ipadTo960) {
 
-	// any grid above half way should be 100% wide
-	@for $i from ($total-columns/2) through $total-columns {
-		.grid_#{$i},
-		.grid_#{$i}_wide {
-			width: 100%;
-			max-width: rem($max-width-single-column);
-			float: none;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.grid_#{$i} {
-    		&:last-child {
-        		margin-right: auto;
-    		}
-		}
-	}
-}
-
-/* ===========================
- * iPad to Desktop
- * =========================== */
-@include susy-breakpoint(30em 60em, $total-columns) {
-}
-
-/* ===========================
- * iPhone to iPad
- * =========================== */
-@include susy-breakpoint(736px 768px, $total-columns) {
-}
-
-
-/* ===========================
- * iPhone
- * =========================== */
-@include susy-breakpoint(0 735px, $total-columns) {
-    body {
-        background: red;
-    }
+    $columns: map-get($_960Grid, columns);
 
     .container {
-        padding: {
-            left: $grid-padding;
-            right: $grid-padding;
-        }
+        width: 100%;
+    }
+
+    .grid:nth-child(#{$columns}n) {
+        margin-right: 0;
     }
 
     @for $i from 1 through $total-columns {
-		.grid_#{$i},
-		.grid_#{$i}_wide {
-			width: 100%;
-			max-width: rem($max-width-single-column);
-			float: none;
-			margin-left: auto;
-			margin-right: auto;
-		}
+	    .grid_#{$i} {
+    	    @if $i <= $columns {
+        	    @include span($i of $_960Grid);
+    	    } @else {
+        	    @include span($columns of $_960Grid);
+    	    }
+        }
+    }
+}
 
-		.grid_#{$i} {
-    		&:last-child {
-        		margin-right: auto;
-    		}
-		}
-	}
+/**
+ * Larger screens (up to ipad portrait).
+ * */
+@include susy-breakpoint($container_largerPhones) {
+    $columns: map-get($_768Grid, columns);
+
+    .container {
+        width: 100%;
+    }
+
+    .grid:nth-child(#{$columns}n) {
+        margin-right: 0;
+    }
+
+    @for $i from 1 through $total-columns {
+	    .grid_#{$i} {
+    	    @if $i <= $columns {
+        	    @include span($i of $_768Grid);
+    	    } @else {
+        	    @include span($columns of $_768Grid);
+    	    }
+        }
+    }
+}
+
+/**
+ * Anything smaller.
+ * */
+@include susy-breakpoint($container_small) {
+
+    @for $i from 1 through $total-columns {
+	    .grid_#{$i} {
+    	    width: 100%;
+    	    max-width: rem(300);
+    	    margin: {
+        	    left: auto;
+        	    right: auto;
+    	    }
+    	    float: none;
+
+    	    &:last-child {
+        	    margin-right: auto;
+    	    }
+        }
+    }
 }
