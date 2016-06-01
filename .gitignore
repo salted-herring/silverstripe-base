@@ -8,7 +8,7 @@ silverstripe-cache
 .DS_Store
 .svn
 .tgz
-
+.htaccess
 themes/*/.sass-cache
 themes/*/build/components
 themes/*/build/lib
@@ -19,9 +19,10 @@ vendor
 framework
 cms
 
-
 ## Silverstripe Modules ##
+modules
 blog
+blogadmin
 blogcategories
 googlesitemaps
 html5
@@ -40,7 +41,17 @@ userforms
 gridfieldpaginatorwithshowall
 sortablegridfield
 widgets
-lumberjack
 silverstripe-versioneddataobjects
 versioned-gridfield
-silverstripe-cropperfield
+silverstripe-cropperfieldlumberjack
+quickaddnew
+reports
+siteconfig
+tagfield
+lumberjack/
+.htaccess
+silverstripe-block/
+var/
+silverstripe-standard-permissions/
+image-orientation-fixer/
+salted-library/

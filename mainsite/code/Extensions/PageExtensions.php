@@ -23,7 +23,6 @@
 			/**
 			 * No longer using requirements in live mode - there are issues with the css paths.
 			 * */
-			//Requirements::combine_files("common.min.css", $files);
 			
 			$outputFiles = array();
 			
@@ -32,26 +31,6 @@
 			}
 			
 			return implode("\n\t\t", $outputFiles);
-		}
-		
-		public function getRequireJS() {
-			
-			if(Director::isDev()) {
-				$script = "<script src=\"" . $this->owner->ThemeDir() . "/js/lib/require.js\"></script>\n";
-				$script .= "<script>\n";
-				$script .= "require([\"" . $this->owner->ThemeDir() . "/js/dev.config\"], function (common) {";
-				$script.= "require([\"pagetypes/" . strtolower($this->owner->ClassName) . "\"]);";
-				$script.= "});";
-				$script .= "</script>";
-	
-				return $script;
-				
-			} else {
-				$script = '<script src="' . $this->owner->ThemeDir() . '/js/lib/require.js" data-main="' 
-							. $this->owner->ThemeDir() . '/%s"></script>';
-
-				return sprintf($script, 'build/pagetypes/' . strtolower($this->owner->ClassName));
-			}
 		}
 		
 		public function getGACode() {

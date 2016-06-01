@@ -15,7 +15,7 @@
 		
 		<% include GA %>
 	</head>
-	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %>">
+	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %> page-type-$BodyClass.LowerCase">
 		<% include Header %>
 		
 		<main class="container">
@@ -23,6 +23,5 @@
 		</main>
 		
 		<% include Footer %>
-		$getRequireJS
 	</body>
 </html>
