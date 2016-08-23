@@ -37,8 +37,8 @@ $retina-sprite-urls2x    : 0;
  * @param {Boolean} [$hover=false]
  * @param {Boolean} [$active=false]
  */
-@mixin retina-sprite($name, $sprite-name: 0, $dimensions: false, $hover: false, $active: false, $nonRetina: false) {
-  $index: 2;
+@mixin retina-sprite($name, $sprite-name: spritesheet, $dimensions: false, $hover: false, $active: false, $nonRetina: false) {
+  $index: 1;
   $len: length($retina-sprite-names);
 
   @for $i from $index through $len {
@@ -52,6 +52,7 @@ $retina-sprite-urls2x    : 0;
 
   $sprite2x     : nth($retina-sprite-sprites2x, $index);
   $sprite-url2x : nth($retina-sprite-urls2x, $index);
+
 
   @include _retina-sprite($name, $sprite, $sprite-url, $sprite2x, $sprite-url2x, $hover, $active, $dimensions, $nonRetina: $nonRetina);
 }
@@ -130,9 +131,9 @@ $retina-sprite-urls2x    : 0;
 //
 @mixin _retina-sprite($name, $sprite, $sprite-url, $sprite2x, $sprite-url2x, $hover, $active, $dimensions: true, $pad: 0, $nonRetina: false) {
   background-image: $sprite-url;
-  
+
   @include _retina-sprite-bg-pos($sprite, $name, $pad);
-  
+
   @if $nonRetina {
   	@include background-size(auto);
   }
@@ -163,9 +164,9 @@ $retina-sprite-urls2x    : 0;
 	    //  sprite-path() returns the path of the generated sprite sheet, which
 	    //  image-width() calculates the width of. the ceil() is in place in case
 	    //  you have sprites that have an odd-number of pixels in width
-	
+
 	    @include _retina-sprite-bg-pos($sprite2x, $name, $pad, 2);
-	
+
 		@if $hover == true {
 			&:hover  { @include _retina-sprite-bg-pos($sprite2x, $name + _hover, $pad, 2); }
 		}
@@ -174,5 +175,5 @@ $retina-sprite-urls2x    : 0;
 		}
 	}
   }
-  
+
 }

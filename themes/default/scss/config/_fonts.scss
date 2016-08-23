@@ -22,6 +22,10 @@
 */
 
 
+/**
+ * The default font stack.
+ * */
+$default_font_family: 'ProximaNovaSoft', Arial, 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif;
 
 
 /**
@@ -29,42 +33,10 @@
  * - Update with the values output by fontello.
  * */
 $icons: (
-	dashboard:		'\e800',
-	login:			'\e801',
-	missions:		'\e802',
-	search:			'\e803',
-	upload:			'\e804',
-	arrow:			'\e805',
-	crew:			'\e806',
-	cup:			'\e807',
-	down:			'\e808',
-	duration:		'\e809',
-	liked:			'\e80a',
-	minus:			'\e80b',
-	next:			'\e80c',
-	plus:			'\e80d',
-	print:			'\e80e',
-	safety:			'\e80f',
-	tips:			'\e810',
-	tools:			'\e811',
-	points:			'\e812',
-	right-big:		'\e813',
-	facebook:		'\e814',
-	instagram:		'\e815',
-	twitter:		'\e816',
-	cancel:			'\e817',
-	unlock:			'\e818',
-	rubbish:		'\e819',
-	circle-empty:	'\e81a',
-	dot-circled:	'\e81b',
-	check:			'\e81c',
-	check-empty:	'\e81d',
-	ok:				'\e81e',
-	spin:			'\e81f',
-	salted-herring: '\e820'
+	//dashboard:		'\e800',
 );
 
-@mixin icon($icon: facebook, $font-size: rem(14), $position: before, $hide-font: true) {
+@mixin icon($icon: dashboard, $font-size: rem(14), $position: before, $hide-font: true) {
 
 	@if $hide-font {
 		font-size: 0;

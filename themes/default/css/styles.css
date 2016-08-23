@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * @file styles.scss
  *
@@ -427,198 +426,56 @@
 /* ===========================
  * Responsive Grid
  * =========================== */
+@media (max-width: 959px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 48rem;
+    width: 100%;
+  }
+
+  .grid_6 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .grid_7 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .grid_8 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .grid_9 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .grid_10 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .grid_11 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 /**
  * Anything less than 960 -> down to portrait iPad.
  * */
-@media (min-width: 768px) and (max-width: 959px) {
-  .container {
-    width: 100%;
-  }
-
-  .grid:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  .grid_1 {
-    width: 31.25%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_2 {
-    width: 64.58333%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_3 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_4 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_5 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_6 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_7 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_8 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_9 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_10 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_11 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-
-  .grid_12 {
-    width: 97.91667%;
-    float: left;
-    margin-left: 1.04167%;
-    margin-right: 1.04167%;
-  }
-}
 /**
  * Larger screens (up to ipad portrait).
  * */
-@media (min-width: 640px) and (max-width: 767px) {
-  .container {
-    width: 100%;
-  }
-
-  .grid:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  .grid_1 {
-    width: 46.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_2 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_3 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_4 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_5 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_6 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_7 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_8 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_9 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_10 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_11 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-
-  .grid_12 {
-    width: 96.875%;
-    float: left;
-    margin-left: 1.5625%;
-    margin-right: 1.5625%;
-  }
-}
 /**
  * Anything smaller.
  * */
@@ -677,83 +534,6 @@
   .grid_5:last-child {
     margin-right: auto;
   }
-
-  .grid_6 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_6:last-child {
-    margin-right: auto;
-  }
-
-  .grid_7 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_7:last-child {
-    margin-right: auto;
-  }
-
-  .grid_8 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_8:last-child {
-    margin-right: auto;
-  }
-
-  .grid_9 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_9:last-child {
-    margin-right: auto;
-  }
-
-  .grid_10 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_10:last-child {
-    margin-right: auto;
-  }
-
-  .grid_11 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_11:last-child {
-    margin-right: auto;
-  }
-
-  .grid_12 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_12:last-child {
-    margin-right: auto;
-  }
 }
 /**
  * @file _fonts.scss
@@ -775,768 +555,12 @@
 										'30669F_0_0.svg'), '30669F_0_0.eot', bold, normal);
 */
 /**
+ * The default font stack.
+ * */
+/**
  * Fontello config:
  * - Update with the values output by fontello.
  * */
-.icon-dashboard {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-dashboard:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-login {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-login:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-missions {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-missions:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-search {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-search:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-upload {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-upload:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-arrow {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-arrow:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-crew {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-crew:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-cup {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-cup:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-down {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-down:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-duration {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-duration:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-liked {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-liked:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-minus {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-minus:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-next {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-next:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-plus {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-plus:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-print {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-print:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-safety {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-safety:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-tips {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-tips:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-tools {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-tools:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-points {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-points:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-right-big {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-right-big:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-facebook {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-facebook:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-instagram {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-instagram:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-twitter {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-twitter:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-cancel {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-cancel:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-unlock {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-unlock:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-rubbish {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-rubbish:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-circle-empty {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-circle-empty:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-dot-circled {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-dot-circled:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-check {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-check:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-check-empty {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-check-empty:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-ok {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-ok:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-spin {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-spin:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
-.icon-salted-herring {
-  font-size: 0;
-  line-height: 0;
-  text-indent: -1000000px;
-}
-.icon-salted-herring:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.875rem;
-  text-indent: 0;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "";
-}
-
 /**
  * @file _sprites.scss
  *
@@ -1569,6 +593,271 @@
  * @param {String} $path
  * @param {String} $path2x
  */
+/**
+ * @file _modifiers.scss
+ *
+ * All generic modifiers used throughout the site.
+ * */
+/**
+ * Centre content.
+ * */
+.centre {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**
+ * Clearfix
+ * */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/**
+ * Floats
+ * */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/**
+ * Group content - i.e. clearfix (group seems a better fit semantically).
+ * */
+.group {
+  overflow: visible;
+}
+.group:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/**
+ * Generic colours
+ * */
+/**
+ * Hide text
+ * */
+.hide_text {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/**
+ * Hide overflow
+ * */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/**
+ * Antialiasing
+ * */
+.antialiased, body, strong,
+b {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * Uppercase text
+ * */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/**
+ * centred text.
+ * */
+.text-center {
+  text-align: center;
+}
+
+/**
+ * Font weights
+ * */
+/*
+.font-weight {
+    &-bold {
+    	font-weight: bold;
+    }
+
+    &-semi-bold {
+    	font-weight: 400;
+    }
+
+    &-medium {
+    	font-weight: 200;
+    }
+
+    &-regular,
+    &-normal {
+    	font-family: 'ProximaNovaSoft', Arial, 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, sans-serif;
+    	font-weight: normal;
+    }
+}
+*/
+/**
+ * Consistent margin above & below a block
+ * */
+.margin-top {
+  margin-top: 1rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 959px) {
+  .margin-top {
+    padding-top: 0.5rem;
+  }
+
+  .margin-bottom {
+    padding-bottom: 0.5rem;
+  }
+}
+/**
+ * Max width containers - at responsive sizes, there should be a max width.
+ * */
+@media (min-width: 0) and (max-width: 639px) {
+  .max-width {
+    width: 100%;
+    max-width: 18.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+@media (max-width: 959px) {
+  .single-max-width {
+    max-width: 40rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+}
+
+/**
+ * Heights
+ * */
+.full-height {
+  height: 100%;
+}
+
+@media (max-width: 959px) {
+  .full-height {
+    height: auto;
+  }
+}
+/**
+ * Mobile only content
+ * */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .mobile-only {
+    display: block;
+  }
+}
+/**
+ * Text alignment
+ * */
+.text-left {
+  text-align: left;
+}
+
+.text-centre {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/**
+ * Error class
+ * */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -moz-binding: url('/css/xml/ellipsis.xml#ellipsis');
+}
+
+/**
+ * @file _typography.scss
+ *
+ * Global typography styles.
+ * */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "ProximaNovaSoft", Arial, "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.14286em;
+}
+
+body,
+p,
+li {
+  font-size: 0.875rem;
+  line-height: 1.14286em;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.28571em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2em;
+  margin-bottom: 1.375rem;
+}
+
+h1 {
+  font-weight: 200;
+  line-height: 1em;
+  font-size: 2.625rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
 /**
  * Import Sprite sheet.
  * */
@@ -1939,108 +1228,34 @@ textarea {
  * Blocks.
  * */
 /**
- * Elements.
+ * Plugins.
  * */
 /**
- * Modules
+ * Pages.
  * */
 /**
- * @file _typography.scss
- *
- * Global styles.
+ * Element overrides.
  * */
 html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 *,
 *:before,
 *:after {
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-body {
-  font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern=1";
-  text-rendering: optimizeLegibility;
-}
-
-body,
-p,
-span,
-td,
-li {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
-body,
-p,
-td,
-li {
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 4.5rem;
-  line-height: 1em;
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a:link, a:visited {
-  border-bottom: none;
-  text-decoration: underline;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  border-bottom: none;
-  text-decoration: underline;
-}
-
 /**
- * Style classes
+ * Generic breakpoint.
  * */
-.hide_text {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  text-transform: capitalize;
+@media (max-width: 959px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
-
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.text-centered {
-  text-align: center;
-}
-
-.ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  -ms-text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  -moz-binding: url('/css/xml/ellipsis.xml#ellipsis');
-}
-
-/**
- * Pages.
- * */

@@ -21,7 +21,15 @@
 }
 
 @function rem($size: $font_size) {
-  @return ($size/$font_size)+rem;
+  @return (strip-units($size)/strip-units($font_size))+rem;
+}
+
+@function em($size: $font_size, $target: $font_size) {
+  @return (strip-units($size)/strip-units($target))+em;
+}
+
+@function strip-units($value) {
+    @return $value / ($value * 0 + 1);
 }
 
 @mixin placeholder($selector : null) {

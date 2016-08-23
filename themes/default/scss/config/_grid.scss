@@ -99,56 +99,39 @@ $susy: (
  * Responsive Grid
  * =========================== */
 
+@include breakpoint($container) {
+    .container {
+        padding-left: $gutter-width;
+        padding-right: $gutter-width;
+        max-width: rem(768);
+        width: 100%;
+    }
+
+    @for $i from ($total-columns/2) to $total-columns {
+        .grid_#{$i} {
+            width: 100%;
+            margin: {
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
 
 /**
  * Anything less than 960 -> down to portrait iPad.
  * */
 @include susy-breakpoint($container_ipadTo960) {
 
-    $columns: map-get($_960Grid, columns);
 
-    .container {
-        width: 100%;
-    }
-
-    .grid:nth-child(#{$columns}n) {
-        margin-right: 0;
-    }
-
-    @for $i from 1 through $total-columns {
-	    .grid_#{$i} {
-    	    @if $i <= $columns {
-        	    @include span($i of $_960Grid);
-    	    } @else {
-        	    @include span($columns of $_960Grid);
-    	    }
-        }
-    }
 }
 
 /**
  * Larger screens (up to ipad portrait).
  * */
 @include susy-breakpoint($container_largerPhones) {
-    $columns: map-get($_768Grid, columns);
 
-    .container {
-        width: 100%;
-    }
-
-    .grid:nth-child(#{$columns}n) {
-        margin-right: 0;
-    }
-
-    @for $i from 1 through $total-columns {
-	    .grid_#{$i} {
-    	    @if $i <= $columns {
-        	    @include span($i of $_768Grid);
-    	    } @else {
-        	    @include span($columns of $_768Grid);
-    	    }
-        }
-    }
 }
 
 /**
@@ -156,7 +139,7 @@ $susy: (
  * */
 @include susy-breakpoint($container_small) {
 
-    @for $i from 1 through $total-columns {
+    @for $i from 1 through 5 {
 	    .grid_#{$i} {
     	    width: 100%;
     	    max-width: rem(300);
