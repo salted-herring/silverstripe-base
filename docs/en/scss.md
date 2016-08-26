@@ -4,7 +4,7 @@ The css structure we use is based upon bem (https://en.bem.info/methodology/quic
 
 ## File Layout
 
-The solder structure should be:
+The folder structure should be:
 
 - *scss*:
     - blocks  
