@@ -5,4 +5,4 @@ Our silverstripe base kit.
 
 ### Front end
 
- * [sass](docs/en/scss)
+ * [sass](https://github.com/salted-herring/silverstripe-base/docs/en/scss)
