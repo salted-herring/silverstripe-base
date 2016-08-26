@@ -39,6 +39,7 @@ The block name describes its purpose ("What is it?" — _menu_ or _button_), not
 
 A block should look like the following:
 
+
 ```scss
 /*
  * /blocks/_block-name.scss
@@ -48,11 +49,12 @@ A block should look like the following:
 }
 ```
 
+
 The naming convention is to use hyphen case - e.g.
 
     block-name
 
-```NOT```
+**NOT**
 
     blockName
     
@@ -107,12 +109,14 @@ The name of the element **extends** the block using double underscores "__":
     
 **Note:** the last item is an example of nested elements. Elements may nest infinitely within each other.
 
-```NOT```
+**NOT**
 
     block-name-item
     block-name-red-text
     
 The above are bad as they represent **Appearance** rather than **Context**  
+
+----
 
 ### Modifiers
 
