@@ -5,4 +5,4 @@ Our silverstripe base kit.
 
 ### Front end
 
- * [sass](doc/en/scss)
+ * [sass](docs/en/scss)
