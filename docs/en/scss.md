@@ -7,21 +7,21 @@ The css structure we use is based upon bem (https://en.bem.info/methodology/quic
 The solder structure should be:
 
 - *scss*:
- - blocks
-   - elements
-   - modifiers
- - config
-   - _colours.scss
-   - _fonts.scss
-   - _grid.scss
-   - _mixins.scss
-   - _modifiers.scss
-   - _retina.scss
-   - _sprite.scss
-   - _typography.scss
-   - _variables.scss
- - pages
- - plugins
+    - blocks  
+        - elements
+        - modifiers
+    - config  
+        - _colours.scss
+        - _fonts.scss
+        - _grid.scss
+        - _mixins.scss
+        - _modifiers.scss
+        - _retina.scss
+        - _sprite.scss
+        - _typography.scss
+        - _variables.scss
+        - pages
+        - plugins
   
 **Blocks** - Contains all blocks & subsequently any elements & any modifiers.  
 **Elements** - Elements of a block. These are elements that __cannot__ exist by themselves outside of their associated block.  
