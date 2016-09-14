@@ -9,4 +9,13 @@ class DataListExt extends Extension {
         }
         return $formated;
     }
+
+    public function SumFunction($function_name) {
+        $lst = $this->owner;
+        $n = 0;
+        foreach ($lst as $item) {
+            $n += $item->{$function_name}();
+        }
+        return $n;
+    }
 }
