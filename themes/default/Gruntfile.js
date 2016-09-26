@@ -49,25 +49,12 @@ imageoptim: {
 		lintspaces: {
             all: {
                 src: [
-                    '../mainsite/code/*',
+                    '../../mainsite/code/*',
                     'templates/*',
                     'scss/*'
                 ],
                 options: {
                     editorconfig: '../../.editorconfig'
-                }
-            }
-        },
-
-        fixindent: {
-            php: {
-                src: [
-                    '../mainsite/code/*.php'
-                ],
-                options: {
-                    style: 'space',
-                    size: 4,
-                    change: 1
                 }
             }
         }
@@ -77,7 +64,6 @@ imageoptim: {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-lintspaces');
-	grunt.loadNpmTasks('grunt-fixindent');
 
 	grunt.registerTask('default', ['compass:dist']);
 	grunt.registerTask('production', ['compass:dist']);//, 'imageoptim']);
