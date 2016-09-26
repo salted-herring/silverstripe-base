@@ -11,10 +11,8 @@ silverstripe-cache
 .tgz
 .htaccess
 themes/*/.sass-cache
-themes/*/build/components
-themes/*/build/lib
-themes/*/build/views
 themes/*/js/components
+themes/*/node_modules
 
 vendor
 framework
