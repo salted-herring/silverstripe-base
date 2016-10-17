@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "726ba940a74cf3efff732f81bc2ce714",
-    "content-hash": "0f037a534ca21dc46def069cd456e016",
+    "hash": "f8b08fb2781cbff6414651f1fadeb939",
+    "content-hash": "44ab164ff5325a994f336ffaf0cdbcb3",
     "packages": [
         {
             "name": "composer/installers",
@@ -394,16 +394,16 @@
         },
         {
             "name": "salted-herring/salted-cropper",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/salted-herring/salted-cropper.git",
-                "reference": "3d339a5e71a76659dade7fa1ce7e2244cd434280"
+                "reference": "703d47bda61eb8bca02521959378ab3b8c8973a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/salted-herring/salted-cropper/zipball/3d339a5e71a76659dade7fa1ce7e2244cd434280",
-                "reference": "3d339a5e71a76659dade7fa1ce7e2244cd434280",
+                "url": "https://api.github.com/repos/salted-herring/salted-cropper/zipball/703d47bda61eb8bca02521959378ab3b8c8973a0",
+                "reference": "703d47bda61eb8bca02521959378ab3b8c8973a0",
                 "shasum": ""
             },
             "type": "silverstripe-module",
@@ -423,20 +423,20 @@
                 "library",
                 "php"
             ],
-            "time": "2016-10-17 04:51:57"
+            "time": "2016-10-17 22:33:28"
         },
         {
             "name": "salted-herring/salted-library",
-            "version": "v0.0.7",
+            "version": "v0.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/salted-herring/salted-library.git",
-                "reference": "201cb8c6f4e70e300ec1a8900f3271343647e045"
+                "reference": "fe71290fc8a752fc00961e20119439346cf555e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/salted-herring/salted-library/zipball/201cb8c6f4e70e300ec1a8900f3271343647e045",
-                "reference": "201cb8c6f4e70e300ec1a8900f3271343647e045",
+                "url": "https://api.github.com/repos/salted-herring/salted-library/zipball/fe71290fc8a752fc00961e20119439346cf555e8",
+                "reference": "fe71290fc8a752fc00961e20119439346cf555e8",
                 "shasum": ""
             },
             "require": {
@@ -462,7 +462,7 @@
                 "php",
                 "silverstripe"
             ],
-            "time": "2016-09-14 22:13:04"
+            "time": "2016-10-05 20:26:07"
         },
         {
             "name": "sheadawson/quickaddnew",
@@ -470,12 +470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sheadawson/silverstripe-quickaddnew.git",
-                "reference": "ab8e2b4d4e177fabed8260f515f5f59d552a32ff"
+                "reference": "b7fc2474fc258dd547281f718bf56c2ccd5382db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sheadawson/silverstripe-quickaddnew/zipball/ab8e2b4d4e177fabed8260f515f5f59d552a32ff",
-                "reference": "ab8e2b4d4e177fabed8260f515f5f59d552a32ff",
+                "url": "https://api.github.com/repos/sheadawson/silverstripe-quickaddnew/zipball/b7fc2474fc258dd547281f718bf56c2ccd5382db",
+                "reference": "b7fc2474fc258dd547281f718bf56c2ccd5382db",
                 "shasum": ""
             },
             "require": {
@@ -499,7 +499,7 @@
                 "Forms",
                 "silverstripe"
             ],
-            "time": "2016-05-27 00:56:39"
+            "time": "2016-10-14 00:14:43"
         },
         {
             "name": "silverstripe-australia/gridfieldextensions",
@@ -927,16 +927,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.11",
+            "version": "v2.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "05a03ed27073638658cab9405d99a67dd1014987"
+                "reference": "024de37f8a6b9e5e8244d9eb3fcf3e467dd2a93f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/05a03ed27073638658cab9405d99a67dd1014987",
-                "reference": "05a03ed27073638658cab9405d99a67dd1014987",
+                "url": "https://api.github.com/repos/symfony/process/zipball/024de37f8a6b9e5e8244d9eb3fcf3e467dd2a93f",
+                "reference": "024de37f8a6b9e5e8244d9eb3fcf3e467dd2a93f",
                 "shasum": ""
             },
             "require": {
@@ -972,7 +972,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-09-06 10:55:00"
+            "time": "2016-09-29 14:03:54"
         },
         {
             "name": "thisisbd/silverstripe-maintenance-mode",
@@ -1436,7 +1436,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.11",
+            "version": "v2.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
