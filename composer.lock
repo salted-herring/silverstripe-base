@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d99d0881b5d16873162121476561b429",
-    "content-hash": "522fb5615d637f140da83a2254c38555",
+    "hash": "726ba940a74cf3efff732f81bc2ce714",
+    "content-hash": "0f037a534ca21dc46def069cd456e016",
     "packages": [
         {
             "name": "composer/installers",
@@ -391,6 +391,39 @@
                 "silverstripe"
             ],
             "time": "2016-05-03 22:11:31"
+        },
+        {
+            "name": "salted-herring/salted-cropper",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/salted-herring/salted-cropper.git",
+                "reference": "3d339a5e71a76659dade7fa1ce7e2244cd434280"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/salted-herring/salted-cropper/zipball/3d339a5e71a76659dade7fa1ce7e2244cd434280",
+                "reference": "3d339a5e71a76659dade7fa1ce7e2244cd434280",
+                "shasum": ""
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Salted Herring",
+                    "homepage": "http://saltedherring.com"
+                }
+            ],
+            "description": "Salted Herring's Image Cropper Field (in progress)",
+            "homepage": "https://github.com/salted-herring/salted-library",
+            "keywords": [
+                "library",
+                "php"
+            ],
+            "time": "2016-10-17 04:51:57"
         },
         {
             "name": "salted-herring/salted-library",
