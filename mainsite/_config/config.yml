@@ -11,17 +11,17 @@ SSViewer:
   theme: 'default'
 Page:
   extensions:
-    - SaltedCropperExt
     - OpenGraphExtension
     - TwitterCardExtension
+    - SaltedCropperExt
     - SeoObjectExtension
     - SEOExtension
 SiteConfig:
   extensions:
-    - SaltedCropperExt
     - CustomSiteConfig
     - OpenGraphExtension
     - TwitterCardExtension
+    - SaltedCropperExt
 Page_Controller:
   extensions:
     - PageControllerDecorator

@@ -38,7 +38,7 @@ class OpenGraphExtension extends DataExtension {
 				$title,
 				new TextareaField('OGDescription', 'Description'),
 				$OGImage = new UploadField('OGImage', 'Image'),
-				SaltedCropperField::create('OGImageCropped', 'OGImage', $this, 470/246)
+				SaltedCropperField::create('OGImageCropped', 'OGImage', $this->owner, 470/246)
 			)
 		);
 

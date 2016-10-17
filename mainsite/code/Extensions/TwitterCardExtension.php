@@ -37,7 +37,7 @@ class TwitterCardExtension extends DataExtension {
 				$title,
 				new TextareaField('TwitterDescription', 'Description'),
 				$TwitterImage = new UploadField('TwitterImage', 'Image'),
-				SaltedCropperField::create('TwitterImageCropped', 'TwitterImage', $this, 440/220)
+				SaltedCropperField::create('TwitterImageCropped', 'TwitterImage', $this->owner, 440/220)
 			)
 		);
 		$TwitterImage->setDescription('Image must be at least 880px x 440px.');
