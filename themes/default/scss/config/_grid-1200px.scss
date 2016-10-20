@@ -1,0 +1,88 @@
+/**
+ * @file _grid.scss
+ *
+ * Grid configuration
+ * */
+$susy: (
+	container: 			$container-width,
+	column-width: 		$column-width,
+	gutters: 			1/4,
+	gutter-position: 	inside,
+	columns: 			$total-columns,
+	global-box-sizing: 	border-box,
+	spread: 			narrow,
+	math:				static
+);
+
+.container {
+	padding-left: $gutter-width / 2;
+	padding-right: $gutter-width / 2;
+	max-width: $container-width;
+	width: 100%;
+	@include display-flex;
+    @include flex-direction(row);
+	
+	&.grid-centered {
+		justify-content: center;
+	}
+}
+
+.row {
+	@include break;
+
+	&.overflow {
+		overflow: visible;
+	}
+
+	&.padding {
+    	padding: {
+        	left: gutter();
+        	right: gutter()
+    	}
+	}
+
+	width: 100%;
+	&.grid-centered {
+		justify-content: center;
+	}
+	@include display-flex;
+    @include flex-direction(row);
+}
+
+.grid {
+    word-break: break-word;
+}
+
+@for $i from 1 through $total-columns {
+	.grid_#{$i} {
+		@include span($i of $total-columns);
+
+		@if $i != $total-columns {
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&.center {
+			&:last-child {
+				margin-right: auto;
+			}
+		}
+		float: none;
+	}
+
+	.grid_#{$i}_wide {
+		width: span($i);
+	}
+}
+
+
+@for $j from 1 through $total-columns {
+	.spacer_#{$j} {
+		@include pre($j of $total-columns);
+	}
+
+	.after_#{$j} {
+		@include post($j of $total-columns);
+	}
+}

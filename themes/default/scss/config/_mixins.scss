@@ -178,40 +178,6 @@
     }
 }
 
-/**
- * display mixin, especially for display: flex;
- * */
-@mixin display($display) {
-	@if $display == flex {
-		display: -webkit-box;
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-	}
-
-	display: $display;
-}
-
-/**
- * make flexed container's content to wrap
- * */
-
-@mixin flex-wrap {
-	display: -webkit-flex;
-    -webkit-flex-wrap: wrap;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/**
- * make different appearance
- * */
-
-@mixin appearance($value) {
-    -webkit-appearance: $value;
-    -moz-appearance:    $value;
-    appearance:         $value;
-}
 
 /**
  * Triangle generation
