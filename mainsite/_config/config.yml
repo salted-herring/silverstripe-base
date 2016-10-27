@@ -13,7 +13,6 @@ Page:
   extensions:
     - OpenGraphExtension
     - TwitterCardExtension
-    - SaltedCropperExt
     - SeoObjectExtension
     - SEOExtension
 SiteConfig:
@@ -21,7 +20,6 @@ SiteConfig:
     - CustomSiteConfig
     - OpenGraphExtension
     - TwitterCardExtension
-    - SaltedCropperExt
 Page_Controller:
   extensions:
     - PageControllerDecorator

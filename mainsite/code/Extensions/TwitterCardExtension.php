@@ -13,8 +13,7 @@ class TwitterCardExtension extends DataExtension {
 	);
 
 	private static $has_one =  array(
-		'TwitterImage' 			=> 'Image',
-		'TwitterImageCropped'	=> 'Image'
+		'TwitterImage' 			=> 'Image'
 	);
 
 	public function updateCMSFields(FieldList $fields) {
@@ -36,8 +35,7 @@ class TwitterCardExtension extends DataExtension {
 				),
 				$title,
 				new TextareaField('TwitterDescription', 'Description'),
-				$TwitterImage = new UploadField('TwitterImage', 'Image'),
-				SaltedCropperField::create('TwitterImageCropped', 'TwitterImage', $this->owner, 440/220)
+				$TwitterImage = SaltedUploader::create('TwitterImage', 'Image')->setCropperRatio(470/246)
 			)
 		);
 		$TwitterImage->setDescription('Image must be at least 880px x 440px.');

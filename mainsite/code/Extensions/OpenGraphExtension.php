@@ -13,8 +13,7 @@ class OpenGraphExtension extends DataExtension {
 	);
 
 	private static $has_one =  array(
-		'OGImage' 			=> 'Image',
-		'OGImageCropped'	=> 'Image'
+		'OGImage' 			=> 'Image'
 	);
 
 
@@ -37,8 +36,7 @@ class OpenGraphExtension extends DataExtension {
 				),
 				$title,
 				new TextareaField('OGDescription', 'Description'),
-				$OGImage = new UploadField('OGImage', 'Image'),
-				SaltedCropperField::create('OGImageCropped', 'OGImage', $this->owner, 470/246)
+				$OGImage = SaltedUploader::create('OGImage', 'Image')->setCropperRatio(470/246)
 			)
 		);
 
