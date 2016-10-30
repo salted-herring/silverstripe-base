@@ -19,9 +19,17 @@ $susy: (
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+	&.padding {
+    	padding: {
+        	left: gutter();
+        	right: gutter()
+    	}
+	}
+	
 	&.as-flex {
 		@include display-flex;
     	@include flex-direction(row);
+		@include flex-wrap(wrap);
 
 		&.grid-centered {
 			justify-content: center;
@@ -44,11 +52,14 @@ $susy: (
 	}
 
 	width: 100%;
-	&.grid-centered {
-		justify-content: center;
+	&.as-flex {
+		@include display-flex;
+    	@include flex-direction(row);
+		@include flex-wrap(wrap);
+		&.grid-centered {
+			justify-content: center;
+		}
 	}
-	@include display-flex;
-    @include flex-direction(row);
 }
 
 .grid {

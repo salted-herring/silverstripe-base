@@ -84,11 +84,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+.container.padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .container.as-flex {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .container.as-flex.grid-centered {
   justify-content: center;
@@ -97,10 +103,6 @@
 .row {
   clear: both;
   width: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
 }
 .row.overflow {
   overflow: visible;
@@ -109,7 +111,15 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.row.grid-centered {
+.row.as-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.row.as-flex.grid-centered {
   justify-content: center;
 }
 
