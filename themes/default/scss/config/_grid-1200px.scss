@@ -6,7 +6,7 @@
 $susy: (
 	container: 			$container-width,
 	column-width: 		$column-width,
-	gutters: 			1/4,
+	gutters: 			1/5,
 	gutter-position: 	inside,
 	columns: 			$total-columns,
 	global-box-sizing: 	border-box,
@@ -15,15 +15,17 @@ $susy: (
 );
 
 .container {
-	padding-left: $gutter-width / 2;
-	padding-right: $gutter-width / 2;
 	max-width: $container-width;
 	width: 100%;
-	@include display-flex;
-    @include flex-direction(row);
-	
-	&.grid-centered {
-		justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	&.as-flex {
+		@include display-flex;
+    	@include flex-direction(row);
+
+		&.grid-centered {
+			justify-content: center;
+		}
 	}
 }
 
