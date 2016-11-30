@@ -1,3 +1,19 @@
+# Installation
+
+The styles are to be set up with our yeoman generator. To install:
+
+Change into the correct directory:
+
+``cd themes/default``
+
+Then initialize the generator:
+
+``yo sh-base-styles``
+
+You may be asked to overwrite some files (bower.json, package.json etc), make sure you check the difference before overwriting (press d on the keyboard)
+
+For more installation details see https://www.npmjs.com/package/generator-sh-base-styles
+
 # SCSS Layout
 
 The css structure we use is based upon bem (https://en.bem.info/methodology/quick-start/) (http://getbem.com/)
