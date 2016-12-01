@@ -18,7 +18,7 @@
 	<body class="page-$URLSegment<% if $isMobile %> mobile<% end_if %> page-type-$BodyClass.LowerCase">
 		<% include Header %>
 
-		<main class="container">
+		<main id="main">
 			$Layout
 		</main>
 
