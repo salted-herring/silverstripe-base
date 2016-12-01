@@ -79,21 +79,30 @@
  * Grid configuration
  * */
 .container {
-  width: 960px;
+  max-width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
 }
-.container:after {
-  content: " ";
-  display: block;
-  clear: both;
+.container.padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container.as-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.container.as-flex.grid-centered {
+  justify-content: center;
 }
 
 .row {
-  overflow: hidden;
-  *zoom: 1;
   clear: both;
+  width: 100%;
 }
 .row.overflow {
   overflow: visible;
@@ -102,16 +111,28 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+.row.as-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.row.as-flex.grid-centered {
+  justify-content: center;
+}
 
 .grid {
   word-break: break-word;
 }
 
 .grid_1 {
-  width: 60px;
+  width: 100px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_1:last-child {
   margin-right: 0;
@@ -121,14 +142,15 @@
 }
 
 .grid_1_wide {
-  width: 60px;
+  width: 100px;
 }
 
 .grid_2 {
-  width: 140px;
+  width: 220.0px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_2:last-child {
   margin-right: 0;
@@ -138,14 +160,15 @@
 }
 
 .grid_2_wide {
-  width: 140px;
+  width: 220.0px;
 }
 
 .grid_3 {
-  width: 220px;
+  width: 340px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_3:last-child {
   margin-right: 0;
@@ -155,14 +178,15 @@
 }
 
 .grid_3_wide {
-  width: 220px;
+  width: 340px;
 }
 
 .grid_4 {
-  width: 300px;
+  width: 460.0px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_4:last-child {
   margin-right: 0;
@@ -172,14 +196,15 @@
 }
 
 .grid_4_wide {
-  width: 300px;
+  width: 460.0px;
 }
 
 .grid_5 {
-  width: 380px;
+  width: 580px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_5:last-child {
   margin-right: 0;
@@ -189,14 +214,15 @@
 }
 
 .grid_5_wide {
-  width: 380px;
+  width: 580px;
 }
 
 .grid_6 {
-  width: 460.0px;
+  width: 700px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_6:last-child {
   margin-right: 0;
@@ -206,14 +232,15 @@
 }
 
 .grid_6_wide {
-  width: 460.0px;
+  width: 700px;
 }
 
 .grid_7 {
-  width: 540px;
+  width: 820.0px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_7:last-child {
   margin-right: 0;
@@ -223,14 +250,15 @@
 }
 
 .grid_7_wide {
-  width: 540px;
+  width: 820.0px;
 }
 
 .grid_8 {
-  width: 620.0px;
+  width: 940px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_8:last-child {
   margin-right: 0;
@@ -240,14 +268,15 @@
 }
 
 .grid_8_wide {
-  width: 620.0px;
+  width: 940px;
 }
 
 .grid_9 {
-  width: 700px;
+  width: 1060px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_9:last-child {
   margin-right: 0;
@@ -257,14 +286,15 @@
 }
 
 .grid_9_wide {
-  width: 700px;
+  width: 1060px;
 }
 
 .grid_10 {
-  width: 780px;
+  width: 1180px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_10:last-child {
   margin-right: 0;
@@ -274,14 +304,15 @@
 }
 
 .grid_10_wide {
-  width: 780px;
+  width: 1180px;
 }
 
 .grid_11 {
-  width: 860.0px;
+  width: 1300px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_11:last-child {
   margin-right: 0;
@@ -291,250 +322,120 @@
 }
 
 .grid_11_wide {
-  width: 860.0px;
+  width: 1300px;
 }
 
 .grid_12 {
-  width: 940px;
+  width: 1420px;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: none;
 }
 .grid_12.center:last-child {
   margin-right: auto;
 }
 
 .grid_12_wide {
-  width: 940px;
-}
-
-/**
- * Any grid elements marked as first or last should remove the appropriate margins.
- * */
-[class*="grid_"].last {
-  float: right;
-}
-
-/**
- * FIrst item - no padding.
- * */
-.alpha {
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  margin-left: -20px;
-  padding-left: 20px;
-  padding-right: 0;
+  width: 1420px;
 }
 
 .spacer_1 {
-  margin-left: 90px;
+  margin-left: 120px;
 }
 
 .after_1 {
-  margin-right: 90px;
+  margin-right: 120px;
 }
 
 .spacer_2 {
-  margin-left: 170px;
+  margin-left: 240px;
 }
 
 .after_2 {
-  margin-right: 170px;
+  margin-right: 240px;
 }
 
 .spacer_3 {
-  margin-left: 250px;
+  margin-left: 360px;
 }
 
 .after_3 {
-  margin-right: 250px;
+  margin-right: 360px;
 }
 
 .spacer_4 {
-  margin-left: 330px;
+  margin-left: 480px;
 }
 
 .after_4 {
-  margin-right: 330px;
+  margin-right: 480px;
 }
 
 .spacer_5 {
-  margin-left: 410.0px;
+  margin-left: 600px;
 }
 
 .after_5 {
-  margin-right: 410.0px;
+  margin-right: 600px;
 }
 
 .spacer_6 {
-  margin-left: 490px;
+  margin-left: 720px;
 }
 
 .after_6 {
-  margin-right: 490px;
+  margin-right: 720px;
 }
 
 .spacer_7 {
-  margin-left: 570.0px;
+  margin-left: 840px;
 }
 
 .after_7 {
-  margin-right: 570.0px;
+  margin-right: 840px;
 }
 
 .spacer_8 {
-  margin-left: 650px;
+  margin-left: 960px;
 }
 
 .after_8 {
-  margin-right: 650px;
+  margin-right: 960px;
 }
 
 .spacer_9 {
-  margin-left: 730px;
+  margin-left: 1080px;
 }
 
 .after_9 {
-  margin-right: 730px;
+  margin-right: 1080px;
 }
 
 .spacer_10 {
-  margin-left: 810.0px;
+  margin-left: 1200px;
 }
 
 .after_10 {
-  margin-right: 810.0px;
+  margin-right: 1200px;
 }
 
 .spacer_11 {
-  margin-left: 890px;
+  margin-left: 1320px;
 }
 
 .after_11 {
-  margin-right: 890px;
+  margin-right: 1320px;
 }
 
 .spacer_12 {
-  margin-left: 970px;
+  margin-left: 1440px;
 }
 
 .after_12 {
-  margin-right: 970px;
+  margin-right: 1440px;
 }
 
-/* ===========================
- * Responsive Grid
- * =========================== */
-@media (max-width: 959px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 48rem;
-    width: 100%;
-  }
-
-  .grid_6 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .grid_7 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .grid_8 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .grid_9 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .grid_10 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .grid_11 {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-/**
- * Anything less than 960 -> down to portrait iPad.
- * */
-/**
- * Larger screens (up to ipad portrait).
- * */
-/**
- * Anything smaller.
- * */
-@media (min-width: 0) and (max-width: 639px) {
-  .grid_1 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_1:last-child {
-    margin-right: auto;
-  }
-
-  .grid_2 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_2:last-child {
-    margin-right: auto;
-  }
-
-  .grid_3 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_3:last-child {
-    margin-right: auto;
-  }
-
-  .grid_4 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_4:last-child {
-    margin-right: auto;
-  }
-
-  .grid_5 {
-    width: 100%;
-    max-width: 18.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-  }
-  .grid_5:last-child {
-    margin-right: auto;
-  }
-}
 /**
  * @file _fonts.scss
  *
@@ -715,7 +616,7 @@ b {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1179px) {
   .margin-top {
     padding-top: 0.5rem;
   }
@@ -736,7 +637,7 @@ b {
     float: none;
   }
 }
-@media (max-width: 959px) {
+@media (max-width: 1179px) {
   .single-max-width {
     max-width: 40rem;
     width: 100%;
@@ -753,7 +654,7 @@ b {
   height: 100%;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1179px) {
   .full-height {
     height: auto;
   }
@@ -765,7 +666,7 @@ b {
   display: none;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 1179px) {
   .mobile-only {
     display: block;
   }
@@ -1253,7 +1154,7 @@ html {
 /**
  * Generic breakpoint.
  * */
-@media (max-width: 959px) {
+@media (max-width: 1179px) {
   img {
     max-width: 100%;
     height: auto;
