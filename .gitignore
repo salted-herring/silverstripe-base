@@ -59,3 +59,5 @@ salted-cropper/
 composer.lock
 Users/
 composer.lock
+silverstripe-shortlist
+sqlite3
