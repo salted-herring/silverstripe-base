@@ -16,13 +16,15 @@
 
         "hubertusanton/silverstripe-seo": "~2.0",
         "kinglozzer/silverstripegmapsobject": "~1.0.1",
+        "heyday/silverstripe-dataobjectpreview": "~1.0.2",
         "heyday/silverstripe-optimisedimage": "~2.2.1",
         "sheadawson/quickaddnew": "dev-master",
-        "heyday/silverstripe-dataobjectpreview": "~1.0.2",
         "normann/gridfieldpaginatorwithshowall": "dev-master",
-        "undefinedoffset/sortablegridfield": "~0.6.1",
+        "sheadawson/quickaddnew": "dev-master",
         "thisisbd/silverstripe-maintenance-mode": "1.0.5",
+        "undefinedoffset/sortablegridfield": "~0.6.1",
 
+        "thisisbd/silverstripe-maintenance-mode": "1.0.5",
         "salted-herring/image-orientation-fixer": "~1.0",
         "salted-herring/salted-library": "~0.0.7",
         "salted-herring/salted-cropper": "~1.0.1",
