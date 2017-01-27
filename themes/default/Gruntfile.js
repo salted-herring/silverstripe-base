@@ -66,31 +66,31 @@ module.exports = function (grunt) {
                     'replacements': [
                         {
                             'pattern': 'containerwidth',
-                            'replacement': '1200'
+                            'replacement': '960'
                         },
                         {
                             'pattern': 'columnstotal',
-                            'replacement': '16'
+                            'replacement': '12'
                         },
                         {
                             'pattern': 'columnwidth',
-                            'replacement': '43'
+                            'replacement': '60'
                         },
                         {
                             'pattern': 'gutterwidth',
-                            'replacement': '32'
+                            'replacement': '20'
                         },
                         {
                             'pattern': 'gutterratio',
-                            'replacement': '0.7441860465116279'
+                            'replacement': '0.3333333333333333'
                         },
                         {
                             'pattern': 'maxwidth',
-                            'replacement': '1199'
+                            'replacement': '959'
                         },
                         {
                             'pattern': 'maxwidth1',
-                            'replacement': '1199'
+                            'replacement': '959'
                         },
                         {
                             'pattern': 'showdebug',
