@@ -1,7 +1,4 @@
-composer.lock
-assets/*
-tools/phing-metadata
-silverstripe-cache
+## Files
 .buildpath
 .project
 .settings
@@ -10,55 +7,59 @@ silverstripe-cache
 .svn
 .tgz
 .htaccess
-themes/*/.sass-cache
+
+
+## composer
+vendor
+composer.lock
+tools/phing-metadata
+
+## SilverStripe Core
+silverstripe-cache
+framework
+cms
+assets/*
+
+## Javascript
 js/components
 node_modules
 
-vendor
-framework
-cms
+## Themes
+themes/*/.sass-cache
+var/
+Users
 
 ## Silverstripe Modules ##
-modules
 blog
 blogadmin
 blogcategories
 googlesitemaps
-html5
-seo
-taxonomy
 gridfieldextensions
-sortablegridfield
 gridfield-addons
 gridfield-gallery-theme
-staticpublisher
-silverstripe-dataobjectpreview
-silverstripe-optimisedimage
-silverstripe-socialextensions
-silverstripegmapsobject
-userforms
 gridfieldpaginatorwithshowall
-sortablegridfield
-widgets
-silverstripe-versioneddataobjects
-versioned-gridfield
-silverstripe-cropperfieldlumberjack
+html5
+image-orientation-fixer
+lumberjack
+maintenance-mode
 quickaddnew
 reports
-siteconfig
-tagfield
-lumberjack/
-.htaccess
-silverstripe-block/
-var/
-silverstripe-standard-permissions/
-image-orientation-fixer/
-salted-library/
-maintenance-mode/
-salted-cropper/
-composer.lock
-Users/
-composer.lock
+salted-cropper
+salted-library
+seo
+silverstripe-block
+silverstripe-cropperfield
+silverstripe-dataobjectpreview
+silverstripegmapsobject
+silverstripe-optimisedimage
+silverstripe-socialextensions
 silverstripe-shortlist
+silverstripe-standard-permissions
+siteconfig
 sqlite3
-info.php
+sortablegridfield
+staticpublisher
+tagfield
+taxonomy
+userforms
+widgets
