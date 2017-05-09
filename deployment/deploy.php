@@ -34,6 +34,10 @@ task('silverstripe:maintenanceoff', function () {
     return run('{{bin/php}} {{release_path}}/framework/cli-script.php /dev/tasks/MaintenanceMode off');
 })->desc('Run /dev/tasks/MaintenanceMode off');
 
+task('silverstripe:cleanup', function () {
+    return run('rm -rf {{release_path}}/deployment');
+})->desc('Remove deployment directory');
+
 task('deploy', [
     'deploy:prepare',
     'deploy:lock',
@@ -47,5 +51,6 @@ task('deploy', [
     'deploy:symlink',
     'silverstripe:maintenanceoff',
     'deploy:unlock',
-    'cleanup'
+    'cleanup',
+    'silverstripe:cleanup'
 ])->desc('Deploy SilverStripe');
