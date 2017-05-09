@@ -44,19 +44,39 @@ if (Director::isLive()) {
     SS_Log::add_writer(new SS_LogEmailWriter('administration@saltedherring.com'), SS_Log::ERR);
 }
 
-if (class_exists('Memcache')) {
+/*
+|--------------------------------------------------------------------------
+| Check if Memcache is available, if so load it.
+|--------------------------------------------------------------------------
+*/
+$host = Director::isLive() ? '127.0.0.1' : 'localhost';
+$port = 11211;
+$isMemcacheAvailable = false;
+
+if (class_exists('Memcached')) {
+    $memcache = new Memcached();
+    $isMemcacheAvailable = @$memcache->addServer($host, $port);
+} elseif (class_exists('Memcache')) {
+    $memcache = new Memcache();
+    $isMemcacheAvailable = @$memcache->connect($host, $port);
+}
+
+if ($isMemcacheAvailable === false) {
+} else {
     SS_Cache::add_backend(
         'primary_memcached',
         'Memcached',
         array(
-            'host' => 'localhost',
-            'port' => 11211,
-            'persistent' => true,
-            'weight' => 1,
-            'timeout' => 1,
-            'retry_interval' => 15,
-            'status' => true,
-            'failure_callback' => ''
+            'servers' => array(
+                'host' => $host,
+                'port' => $port,
+                'persistent' => true,
+                'weight' => 1,
+                'timeout' => 5,
+                'retry_interval' => 15,
+                'status' => true,
+                'failure_callback' => null
+            )
         )
     );
     SS_Cache::pick_backend('primary_memcached', 'any', 10);
