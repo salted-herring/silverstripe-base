@@ -15,7 +15,15 @@ require_once("conf/ConfigureFromEnv.php");
 |--------------------------------------------------------------------------
 */
 if (Director::isDev()) {
-    if (isset($_GET['db']) && ($db = $_GET['db'])) {
+    $db = null;
+
+    if (isset($_GET['db'])) {
+        $db = $_GET['db'];
+    } elseif (defined(SS_DB_DRIVER)) {
+        $db = SS_DATABASE_NAME;
+    }
+
+    if (!is_null($db)) {
         global $databaseConfig;
         if ($db == 'sqlite3') {
             $databaseConfig['type'] = 'SQLite3Database';
