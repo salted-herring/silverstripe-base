@@ -5,7 +5,7 @@
         "php": ">=5.3.3, <7.2",
         "mobiledetect/mobiledetectlib": "~2.8.12",
 
-        "silverstripe/behat-extension": "~2.3.6",
+        "silverstripe/behat-extension": "~1.0.3",
         "silverstripe/cms": "~3.6.0",
         "silverstripe/framework": "~3.6.0",
         "silverstripe/googlesitemaps": "~1.2.2",
