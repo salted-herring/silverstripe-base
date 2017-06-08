@@ -25,9 +25,14 @@ if (Director::isDev()) {
 
     if (!is_null($db)) {
         global $databaseConfig;
+
+        if (!is_dir(Director::baseFolder() . '/db')) {
+            mkdir(Director::baseFolder() . '/db');
+        }
+
         if ($db == 'sqlite3') {
-            $databaseConfig['type'] = 'SQLite3Database';
-            $databaseConfig['path'] = ':memory:';
+            $databaseConfig['type'] = 'SQLiteDatabase';
+            $databaseConfig['path'] = Director::baseFolder() . '/db';
         }
     }
 }
