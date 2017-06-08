@@ -19,7 +19,7 @@ if (Director::isDev()) {
 
     if (isset($_GET['db'])) {
         $db = $_GET['db'];
-    } elseif (defined(SS_DB_DRIVER)) {
+    } elseif (defined('SS_DB_DRIVER')) {
         $db = SS_DATABASE_NAME;
     }
 
