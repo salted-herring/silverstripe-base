@@ -1,6 +1,7 @@
 default:
   extensions:
     SilverStripe\BehatExtension\Extension:
+      framework_path: ../framework
       screenshot_path: %behat.paths.base%/artifacts/screenshots
     SilverStripe\BehatExtension\MinkExtension:
       # Adjust this to your local environment
