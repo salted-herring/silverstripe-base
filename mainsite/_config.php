@@ -32,7 +32,7 @@ if (Director::isDev()) {
 
         if ($db == 'sqlite3') {
             $databaseConfig['type'] = 'SQLiteDatabase';
-            $databaseConfig['path'] = Director::baseFolder() . '/db';
+            $databaseConfig['path'] = Director::baseFolder() . '/db/sqlite3';
         }
     }
 }
