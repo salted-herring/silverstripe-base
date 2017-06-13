@@ -17,10 +17,8 @@ Under the config folder, you will find a behat.sample.yml file. Copy this to con
 
 ```yaml
 default:
-  suites: []
   extensions:
     SilverStripe\BehatExtension\Extension:
-      bootstrap_file: cms/tests/behat/serve-bootstrap.php
       framework_path: ../framework
       screenshot_path: %behat.paths.base%/artifacts/screenshots
     SilverStripe\BehatExtension\MinkExtension:
