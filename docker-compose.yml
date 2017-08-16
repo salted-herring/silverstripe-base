@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web:
+    image: simonwinter/silverstripe_nz
+    ports:
+      - "8080:80"
+    volumes:
+      - ./www:/var/www/public
+      - ./logs:/var/log/apache2
+    container_name: basekit
