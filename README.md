@@ -8,10 +8,13 @@ Our silverstripe base kit.
 ### Project Setup
 The project contains a docker compose file allowing you to run a local test environment. In order to utilise this, you should set up a project folder structure like so:
 
-- project name
--- www
--- log
--- utils
+-- project name
+
+--- www
+
+--- logs
+
+--- utils
 
 Clone this repository into the *www* directory.
 
